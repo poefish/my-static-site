@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>鱼籽-2048</title>
     <link rel="stylesheet" href="./style/index.css" />
   </head>
@@ -25,7 +26,7 @@
           <strong>Play 2048 游戏</strong>合成这些数字 目标：
           <strong>2048 !</strong>
         </p>
-        <button>新游戏</button>
+        <button class="again">新游戏</button>
       </div>
       <main>
         <div class="game-grid">
@@ -96,7 +97,13 @@
       </footer>
       <div class="mask status">
         <div class="content">Game Over!</div>
-        <button>再来一次</button>
+        <button class="again">再来一次</button>
+      </div>
+      <div id="controls">
+        <button id="up-button">上</button>
+        <button id="down-button">下</button>
+        <button id="left-button">左</button>
+        <button id="right-button">右</button>
       </div>
     </div>
     <script src="./scripts/tile.js"></script>

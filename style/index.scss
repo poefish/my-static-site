@@ -13,7 +13,7 @@ p {
   @import './nav.scss';
   @import './desc.scss';
   @import './main.scss';
-  
+  @import './controls.scss';
   .body {
     margin: 0;
     padding: 0;
@@ -84,4 +84,8 @@ p {
       line-height: 44px;
     }
   }
-  
+  #controls{
+    @media (max-width:600px) {
+      flex-direction: column;
+    }
+  }

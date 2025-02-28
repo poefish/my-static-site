@@ -252,6 +252,24 @@ main .tile-container .tile.tile-2048 .tile-inner {
     transform: scale(1);
   }
 }
+#controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .body {
   margin: 0;
   padding: 0;
@@ -272,7 +290,6 @@ main .tile-container .tile.tile-2048 .tile-inner {
 
 footer {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   margin-top: 78px;
 }
@@ -317,6 +334,12 @@ footer span {
   font-family: Arial-Black;
   font-weight: 700;
   line-height: 44px;
+}
+
+@media (max-width: 600px) {
+  #controls {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
